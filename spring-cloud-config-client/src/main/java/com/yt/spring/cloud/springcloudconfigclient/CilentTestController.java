@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping(value = "/cilent")
 public class CilentTestController {
 
-    @Value("servername")
+    @Value("${servername}")
     private String servername;
 
     @RequestMapping(value = "/test")
