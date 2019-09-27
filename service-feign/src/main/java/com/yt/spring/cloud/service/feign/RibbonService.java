@@ -1,5 +1,6 @@
 package com.yt.spring.cloud.service.feign;
 
+import com.yt.spring.cloud.service.feign.histric.RibbonServiceHystric;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -10,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @date 2019/9/27下午4:59
  * @Description: TODO
  */
-@FeignClient(value = "SERVICE-RIBBON")
+@FeignClient(value = "SERVICE-RIBBON",fallback = RibbonServiceHystric.class)
 public interface RibbonService {
 
     /**
