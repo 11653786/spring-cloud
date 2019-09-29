@@ -1,4 +1,4 @@
-package com.yt.spring.cloud.springcloudconfig;
+package com.yt.spring.cloud.config.server;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class SpringCloudConfigApplicationTests {
+public class ConfigServerApplicationTests {
 
     @Test
     public void contextLoads() {
